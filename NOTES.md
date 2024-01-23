@@ -53,3 +53,9 @@ https://angular.io/cli/generate#service-command
 
 - Create entities/post.type.ts file with the type definition and export it
 - Use Post type on 'posts.service.ts'
+
+## Consume 'posts' service in 'posts-table' component
+
+- Import 'HttpClientModule' on 'app.module.ts' so the post can inject 'HttpClient' service
+- Set necessary code to consume posts service
+- Review retrieve posts on the console
