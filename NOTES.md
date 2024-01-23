@@ -24,3 +24,15 @@ ng generate module components --module app --routing false --dry-run
 ```
 
 https://angular.io/cli/generate#module-command
+
+## Create 'posts-table' component
+
+```shell
+ng generate component components/PostsTable --module components --skip-tests --dry-run
+```
+
+https://angular.io/cli/generate#component-command
+
+- Clean posts-table.component.\* files
+- Export 'posts-table' component from its 'components' module
+- Render 'posts-table' component into 'app.component.html'
