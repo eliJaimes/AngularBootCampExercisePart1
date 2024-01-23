@@ -3,6 +3,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { Post } from '../entities/post.type';
 
 @Injectable({
 	providedIn: 'root',
@@ -13,7 +14,7 @@ export class PostsService {
 	/* NOTE: use 'readonly' is a good practice that prevents changing the injected token by accident */
 	public constructor(private readonly httpClient: HttpClient) {}
 
-	public getPosts(): Observable<Array<unknown>> {
-		return this.httpClient.get<Array<unknown>>(this.postEndpoint);
+	public getPosts(): Observable<Array<Post>> {
+		return this.httpClient.get<Array<Post>>(this.postEndpoint);
 	}
 }

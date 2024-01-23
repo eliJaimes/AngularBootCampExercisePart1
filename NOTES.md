@@ -48,3 +48,8 @@ https://angular.io/cli/generate#service-command
 - We will consume posts coming from this endpoint: https://jsonplaceholder.typicode.com/posts
 - Inject HttpClient service via dependency injection
 - Create 'getPosts' method that retrieves posts from the endpoint
+
+## Create 'Post' type
+
+- Create entities/post.type.ts file with the type definition and export it
+- Use Post type on 'posts.service.ts'
