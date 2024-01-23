@@ -36,3 +36,15 @@ https://angular.io/cli/generate#component-command
 - Clean posts-table.component.\* files
 - Export 'posts-table' component from its 'components' module
 - Render 'posts-table' component into 'app.component.html'
+
+## Create 'posts' service
+
+```shell
+ng generate service services/Posts --skip-tests --dry-run
+```
+
+https://angular.io/cli/generate#service-command
+
+- We will consume posts coming from this endpoint: https://jsonplaceholder.typicode.com/posts
+- Inject HttpClient service via dependency injection
+- Create 'getPosts' method that retrieves posts from the endpoint
