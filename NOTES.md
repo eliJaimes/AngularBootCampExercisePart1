@@ -86,3 +86,7 @@ ng generate component components/PostItem --module components --skip-tests --dry
 ## Refactor to use 'post-item' component
 
 - Include 'post-item' component on 'posts-table.component.html'
+
+## Pass information to 'post-item'
+
+- https://angular.io/guide/component-interaction#pass-data-from-parent-to-child-with-input-binding
