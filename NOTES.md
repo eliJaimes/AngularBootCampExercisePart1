@@ -90,3 +90,8 @@ ng generate component components/PostItem --module components --skip-tests --dry
 ## Pass information to 'post-item'
 
 - https://angular.io/guide/component-interaction#pass-data-from-parent-to-child-with-input-binding
+
+## Fix styles due to view encapsulation
+
+- https://angular.io/guide/view-encapsulation
+- Move styles from parent to child

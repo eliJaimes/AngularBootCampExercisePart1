@@ -18,19 +18,6 @@
 		.post {
 			list-style: none;
 			margin-bottom: 1rem;
-
-			.id {
-				color: variables.$secondary;
-			}
-
-			.post-title {
-				font-weight: variables.$bold-font;
-				// text-transform: uppercase; //  Alternative to text pipes
-			}
-
-			.post-body {
-				font-style: italic;
-			}
 		}
 	}
 
