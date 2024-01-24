@@ -1,3 +1,19 @@
 <!-- ••[1]••••••••••••••••••••••••• posts-table.component.html •••••••••••••••••••••••••••••• -->
 
-<p>posts-table works!</p>
+<div class="post-container">
+	<!-- NOTE: 'noPostsRef' is a template variable, help you use data from one
+		part of a template in another part of the template
+		https://angular.io/guide/template-reference-variables
+		-->
+	<ul class="post-items" *ngIf="posts.length; else noPostsRef">
+		<h1 class="title">Posts</h1>
+
+		<li class="post" *ngFor="let post of posts; let postIndex = index">
+			<span class="id">{{ post.id }} • </span>{{ post.title }}<br />
+			{{ post.body }}
+		</li>
+	</ul>
+	<ng-template #noPostsRef>
+		<div class="no-posts">Currently, there are no posts.</div>
+	</ng-template>
+</div>

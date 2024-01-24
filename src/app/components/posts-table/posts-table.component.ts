@@ -11,7 +11,7 @@ import { Subscription } from 'rxjs';
 	templateUrl: './posts-table.component.html',
 })
 export class PostsTableComponent implements OnInit, OnDestroy {
-	private posts: Array<Post> = [];
+	public posts: Array<Post> = [];
 
 	private postsSubscription!: Subscription;
 

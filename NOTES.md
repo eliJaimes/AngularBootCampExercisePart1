@@ -61,3 +61,12 @@ https://angular.io/cli/generate#service-command
 - Review retrieve posts on the console
 
 ## Handle 'posts' service observable un subscription
+
+- Manage the 'posts' service subscription
+
+## Render the posts on 'posts-table.component.html'
+
+- Expose the posts to the view
+- Include 'Roboto' font using https://fonts.google.com/share?selection.family=Roboto:wght@100;400;700
+- Add '\_mixins.scss' and '\_variables.scss' files
+- Configure 'styles.scss'

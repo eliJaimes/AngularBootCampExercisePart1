@@ -1,1 +1,33 @@
 // ••[1]••••••••••••••••••••••••• posts-table.component.scss •••••••••••••••••••••••••••••• //
+
+/* stylelint-disable max-nesting-depth */
+
+@use './../../../mixins'as mixins;
+
+@use './../../../variables'as variables;
+
+.post-container {
+	.post-items {
+
+		@include mixins.container;
+
+		.title {
+			color: variables.$primary;
+		}
+
+		.post {
+			list-style: none;
+			margin-bottom: 1rem;
+
+			.id {
+				color: variables.$secondary;
+			}
+		}
+	}
+
+	.no-posts {
+
+		@include mixins.container;
+		font-weight: variables.$bold-font;
+	}
+}
