@@ -95,3 +95,11 @@ ng generate component components/PostItem --module components --skip-tests --dry
 
 - https://angular.io/guide/view-encapsulation
 - Move styles from parent to child
+
+## Create 'filter' component
+
+```shell
+ng generate component components/Filter --module components --skip-tests --dry-run
+```
+
+- Include 'filter' component on 'posts-table.component.html'
