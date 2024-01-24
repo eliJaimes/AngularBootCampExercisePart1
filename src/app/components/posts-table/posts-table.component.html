@@ -10,7 +10,7 @@
 		<!-- <pre>{{ posts | json }}</pre> -->
 		<h1 class="title">Posts</h1>
 
-		<app-filter></app-filter>
+		<app-filter (filterChange)="filterChangeHandler($event)"></app-filter>
 
 		<li class="post" *ngFor="let post of posts; let postIndex = index">
 			<app-post-item [post]="post"></app-post-item>

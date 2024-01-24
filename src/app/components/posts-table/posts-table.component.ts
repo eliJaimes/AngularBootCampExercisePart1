@@ -35,4 +35,10 @@ export class PostsTableComponent implements OnInit, OnDestroy {
 	public ngOnDestroy(): void {
 		this.postsSubscription?.unsubscribe();
 	}
+
+	/* NOTE: filtering logic should be handle it on the component responsible of
+	managing the posts */
+	public filterChangeHandler(event: string): void {
+		console.log('filterChangeHandler event: %O', event);
+	}
 }
