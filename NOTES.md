@@ -82,3 +82,7 @@ https://angular.io/cli/generate#service-command
 ```shell
 ng generate component components/PostItem --module components --skip-tests --dry-run
 ```
+
+## Refactor to use 'post-item' component
+
+- Include 'post-item' component on 'posts-table.component.html'

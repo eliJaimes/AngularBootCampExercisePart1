@@ -11,10 +11,12 @@
 		<h1 class="title">Posts</h1>
 
 		<li class="post" *ngFor="let post of posts; let postIndex = index">
-			<span class="id">{{ post.id }} • </span>
+			<app-post-item></app-post-item>
+
+			<!-- <span class="id">{{ post.id }} • </span>
 			<span class="post-title">{{ post.title | uppercase }}</span
 			><br />
-			<span class="post-body">{{ post.body | titlecase }}</span>
+			<span class="post-body">{{ post.body | titlecase }}</span> -->
 		</li>
 	</ul>
 	<ng-template #noPostsRef>
