@@ -103,3 +103,8 @@ ng generate component components/Filter --module components --skip-tests --dry-r
 ```
 
 - Include 'filter' component on 'posts-table.component.html'
+
+## Add input and styles to 'filter' component
+
+- Add an HTML input type search
+- Style input to improve UI
