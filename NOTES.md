@@ -76,3 +76,9 @@ https://angular.io/cli/generate#service-command
 - Add 'uppercase' pipe
 - Add 'titlecase' pipe
 - Experiment with the 'json' pipe
+
+## Create 'post-item' component
+
+```shell
+ng generate component components/PostItem --module components --skip-tests --dry-run
+```
