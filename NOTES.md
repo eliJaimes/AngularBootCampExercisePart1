@@ -59,3 +59,5 @@ https://angular.io/cli/generate#service-command
 - Import 'HttpClientModule' on 'app.module.ts' so the post can inject 'HttpClient' service
 - Set necessary code to consume posts service
 - Review retrieve posts on the console
+
+## Handle 'posts' service observable un subscription
