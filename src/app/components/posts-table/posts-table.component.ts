@@ -11,7 +11,9 @@ import { Subscription } from 'rxjs';
 	templateUrl: './posts-table.component.html',
 })
 export class PostsTableComponent implements OnInit, OnDestroy {
-	public posts: Array<Post> = [];
+	private posts: Array<Post> = [];
+
+	public filteredPosts: Array<Post> = [];
 
 	private postsSubscription!: Subscription;
 
@@ -25,7 +27,7 @@ export class PostsTableComponent implements OnInit, OnDestroy {
 				this.posts = [];
 			},
 			next: (posts: Array<Post>): void => {
-				this.posts = posts;
+				this.filteredPosts = this.posts = posts;
 				console.log('this.posts: %O', this.posts);
 			},
 		});
@@ -39,6 +41,16 @@ export class PostsTableComponent implements OnInit, OnDestroy {
 	/* NOTE: filtering logic should be handle it on the component responsible of
 	managing the posts */
 	public filterChangeHandler(event: string): void {
-		console.log('filterChangeHandler event: %O', event);
+		const filterValue: string = event.toLowerCase();
+
+		this.filteredPosts = this.posts.filter(
+			(currentValue: Post): boolean =>
+				currentValue.title.includes(filterValue) ||
+				currentValue.body.includes(filterValue),
+		);
+	}
+
+	public clearFilterHandler(): void {
+		this.filteredPosts = this.posts;
 	}
 }

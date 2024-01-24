@@ -114,3 +114,9 @@ ng generate component components/Filter --module components --skip-tests --dry-r
 - Add and event handler to the html input tag
 - Expose an Output property to outside world from 'filter' component
 - Wire filterChange from 'filter' component om 'posts-table.component.html'
+
+## Add business logic to filter posts on 'posts-table' component
+
+- Add a new 'filteredPosts' variable
+- Refactor 'posts-table.component.html' to consume 'filteredPosts' variable instead
+- Add a clear filter button
