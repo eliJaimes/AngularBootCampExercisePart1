@@ -70,3 +70,9 @@ https://angular.io/cli/generate#service-command
 - Include 'Roboto' font using https://fonts.google.com/share?selection.family=Roboto:wght@100;400;700
 - Add '\_mixins.scss' and '\_variables.scss' files
 - Configure 'styles.scss'
+
+## Add pipes to improve readability
+
+- Add 'uppercase' pipe
+- Add 'titlecase' pipe
+- Experiment with the 'json' pipe
